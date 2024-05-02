@@ -29,7 +29,7 @@ function WeaponList() {
             :
             <ul className='weapon-list-ul'>
                 {filteredData.length === 0 ?
-                <p>No se encontraron datos</p>
+                <p className='weapon-list-no-results'>No results were found</p>
                 :
                 filteredData.map((weapon) =>{
                     return <li key={weapon.id}><WeaponCard weapon={weapon}/></li>

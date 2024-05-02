@@ -1,9 +1,11 @@
 import React from 'react'
+import "../Header/Header.css"
+import logo from "/eldenlogo.png"
 
 function Header() {
   return (
-    <header>
-      <h1>Weapon Searcher</h1>
+    <header className='header-header'>
+      <img className='header-logo' src={logo} />
     </header>
   )
 }

@@ -6,10 +6,10 @@ function App() {
   
 
   return (
-    <>
+    <section className='app-section'>
       <Header />
       <WeaponList />
-    </>
+    </section>
   )
 }
 

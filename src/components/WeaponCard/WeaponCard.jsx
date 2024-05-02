@@ -12,7 +12,8 @@ function WeaponCard({weapon}) {
   return (
     <article className='weapon-card-article' onClick={handleClick}>
         {clicked ?
-            <div className='weapon-card-div'>
+            <div className='weapon-card-div-back'>
+                <h4 className='weapon-card-h4'>Required attributes:</h4>
                     {weapon.requiredAttributes.map((atr) =>{
                         return (
                                 <ul className='weapon-card-ul'>
@@ -20,6 +21,7 @@ function WeaponCard({weapon}) {
                                 </ul>
                                 )
                     })}
+                <h4 className='weapon-card-h4'>Scales with:</h4>
                     {weapon.scalesWith.map((scaling) =>{
                         return (
                                 <ul className='weapon-card-ul'>
@@ -27,7 +29,7 @@ function WeaponCard({weapon}) {
                                 </ul>
                                 )
                     })}
-                <p>Weight: {weapon.weight}</p>        
+                <h4 className='weapon-card-h4'>Weight: {weapon.weight}</h4>        
             </div>
         :
         <div className='weapon-card-div'>
