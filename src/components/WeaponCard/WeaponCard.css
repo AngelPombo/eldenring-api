@@ -40,3 +40,29 @@
 .weapon-card-h4{
     color: #C7A663;
 }
+
+
+@media (min-width: 768px){
+    .weapon-card-article{
+        height: 400px;
+        width: 300px;
+    }
+
+    .weapon-card-name{
+        font-size: 30px;
+    }
+
+    .weapon-card-img{
+        width: 200px;
+    }
+
+    .weapon-card-h4{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .weapon-card-li{
+        font-size: 20px;
+        text-align: center;
+    }
+}

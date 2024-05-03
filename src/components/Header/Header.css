@@ -6,3 +6,19 @@
 .header-logo{
     width: 90%;
 }
+
+@media (min-width: 1440px){
+    .header-header{
+        padding-top: 0;
+    }
+
+    .header-logo{
+        width: 70%;
+    }
+}
+
+@media (min-width: 2560px){
+    .header-logo{
+        width: 50%;
+    }
+}
