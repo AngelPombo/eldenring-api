@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-function GetData() {
+function GetWeapons() {
 
     const[data, setData] = useState([]);
     const[error, setError] = useState(false);
@@ -10,7 +10,7 @@ function GetData() {
 
         async function fetchData(){
             try{
-                const fetchedData = await fetch("https://eldenring.fanapis.com/api/weapons?limit=100");
+                const fetchedData = await fetch("https://eldenring.fanapis.com/api/weapons");
                 const parsedData = await fetchedData.json();
                 setData(parsedData.data)
             }catch(e){
@@ -28,4 +28,4 @@ function GetData() {
 
 }
 
-export default GetData
+export default GetWeapons

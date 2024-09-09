@@ -1,0 +1,21 @@
+.homepage-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.homepage-btn{
+    width: 80vw;
+    padding: 0.5rem;
+    border-radius: 33px;
+    font-family: "Cinzel", serif;
+    font-weight: bold;
+    color: #C7A663;
+    background-color: beige;
+}

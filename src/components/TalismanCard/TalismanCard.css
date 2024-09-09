@@ -1,0 +1,70 @@
+.talisman-card-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 14px;
+    height: 340px;
+    width: 230px;
+    background-color: beige;
+    padding: 0.5rem;
+}
+
+.talisman-card-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+.talisman-card-div-back{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.talisman-card-ul{
+    list-style: none;
+}
+
+.talisman-card-name{
+    text-align: center;
+    color: #C7A663;
+}
+
+.talisman-card-img{
+    width: 180px;
+}
+
+.talisman-card-h4{
+    text-align: center;
+    padding: 1rem;
+    color: #C7A663;
+}
+
+
+@media (min-width: 768px){
+    .talisman-card-article{
+        height: 400px;
+        width: 300px;
+    }
+
+    .talisman-card-name{
+        font-size: 30px;
+    }
+
+    .talisman-card-img{
+        width: 200px;
+    }
+
+    .talisman-card-h4{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .talisman-card-li{
+        font-size: 20px;
+        text-align: center;
+    }
+}

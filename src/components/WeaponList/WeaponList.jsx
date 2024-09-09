@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import GetData from '../../hooks/GetData/GetData';
+import GetWeapons from '../../hooks/GetWeapons/GetWeapons';
 import WeaponCard from '../WeaponCard/WeaponCard';
 import "../WeaponList/WeaponList.css"
 
@@ -7,7 +7,7 @@ function WeaponList() {
 
     const[search, setSearch] = useState("")
 
-    const {data, error, loading} = GetData();
+    const {data, error, loading} = GetWeapons();
 
     console.log(data)
 
